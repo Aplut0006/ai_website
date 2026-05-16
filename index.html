@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome to Bawasir AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="center">
+    <div style="text-align:center">
+      <div class="hero-card">
+        <h1>welcome to Bawasir <span class="flag"><span>A</span><span>I</span></span></h1>
+        <p>Discover weather, foods, ingredients, and calories in one place.</p>
+        <div class="hero-actions">
+          <button id="open-cric" class="btn">Open Cricbuzz</button>
+          <button id="check-weather" class="btn secondary">Check Pune & Bokaro Weather</button>
+        </div>
+      </div>
+      <div id="weather-panel" class="weather-panel hidden">
+        <div class="weather-card" id="pune-card">
+          <strong>Pune</strong>
+          <div class="weather-status">Loading weather…</div>
+        </div>
+        <div class="weather-card" id="bokaro-card">
+          <strong>Bokaro Steel City</strong>
+          <div class="weather-status">Loading weather…</div>
+        </div>
+      </div>
+      <div id="debug-log" class="debug-log" aria-live="polite" style="max-width:900px;white-space:pre-wrap;margin-top:14px;color:#0f172a"></div>
+      <section class="food-section">
+        <div class="food-header">
+          <h2>Food Items and Nutrition</h2>
+          <input id="food-search" type="search" placeholder="Search food items..." aria-label="Search food items" />
+        </div>
+        <div class="food-table-wrap">
+          <table class="food-table">
+            <thead>
+              <tr>
+                <th>Food Item</th>
+                <th>Key Ingredients</th>
+                <th>Calories</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chola Bhatura</td>
+                <td>Chickpeas, spices, onion, tomato, fried bread, yogurt</td>
+                <td>550 kcal</td>
+              </tr>
+              <tr>
+                <td>Dosa</td>
+                <td>Rice, urad dal, fenugreek, oil, potato masala (optional)</td>
+                <td>220 kcal</td>
+              </tr>
+              <tr>
+                <td>Pizza</td>
+                <td>Flour crust, tomato sauce, cheese, vegetables, meats</td>
+                <td>285 kcal per slice</td>
+              </tr>
+              <tr>
+                <td>Maggi</td>
+                <td>Instant noodles, seasoning, oil, vegetables, egg</td>
+                <td>320 kcal</td>
+              </tr>
+              <tr>
+                <td>Idli</td>
+                <td>Rice, urad dal, fenugreek, water</td>
+                <td>40 kcal per piece</td>
+              </tr>
+              <tr>
+                <td>Samosa</td>
+                <td>Potato, peas, spices, flour, oil</td>
+                <td>270 kcal</td>
+              </tr>
+              <tr>
+                <td>Biryani</td>
+                <td>Rice, chicken/mutton/vegetables, spices, yogurt, ghee</td>
+                <td>420 kcal per serving</td>
+              </tr>
+              <tr>
+                <td>Paneer Butter Masala</td>
+                <td>Paneer, tomato, butter, cream, spices</td>
+                <td>350 kcal</td>
+              </tr>
+              <tr>
+                <td>Pav Bhaji</td>
+                <td>Potatoes, peas, tomatoes, butter, pav bread</td>
+                <td>450 kcal</td>
+              </tr>
+              <tr>
+                <td>Butter Chicken</td>
+                <td>Chicken, butter, cream, tomato, spices</td>
+                <td>430 kcal</td>
+              </tr>
+              <tr>
+                <td>Veg Sandwich</td>
+                <td>Bread, vegetables, chutney, cheese, butter</td>
+                <td>280 kcal</td>
+              </tr>
+              <tr>
+                <td>Spaghetti Pasta</td>
+                <td>Pasta, tomato sauce, olive oil, garlic, herbs</td>
+                <td>360 kcal</td>
+              </tr>
+              <tr>
+                <td>Gulab Jamun</td>
+                <td>Milk solids, sugar syrup, cardamom</td>
+                <td>150 kcal per piece</td>
+              </tr>
+              <tr>
+                <td>Chicken Kebab</td>
+                <td>Chicken, spices, yogurt, lemon</td>
+                <td>300 kcal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
