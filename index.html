@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Facts Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Nutrition explorer</p>
+        <h1>Search foods, view calories, macros & ingredients.</h
+        >
+        <p class="hero-text">Find nutrition facts for popular foods with instant search, category filters, and easy-to-read food cards.</p>
+      </div>
+      <div class="hero-image">
+        <div class="hero-card">
+          <span>Recommended</span>
+          <h2>Chicken Breast</h2>
+          <p>165 kcal • 31g protein • 3.6g fat</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls-panel">
+        <div class="search-box">
+          <label for="searchInput">Search foods</label>
+          <div class="input-group">
+            <input id="searchInput" type="search" placeholder="Search by name, ingredient, or nutrient..." />
+            <button id="clearSearch" title="Clear search">×</button>
+          </div>
+        </div>
+
+        <div class="filter-grid">
+          <div>
+            <label for="categorySelect">Food type</label>
+            <select id="categorySelect">
+              <option value="all">All categories</option>
+              <option value="Poultry">Poultry</option>
+              <option value="Seafood">Seafood</option>
+              <option value="Vegetables">Vegetables</option>
+              <option value="Fruits">Fruits</option>
+              <option value="Grains">Grains</option>
+              <option value="Dairy">Dairy</option>
+              <option value="Beverages">Beverages</option>
+              <option value="Snacks">Snacks</option>
+              <option value="Baked">Baked</option>
+              <option value="Fast Food">Fast Food</option>
+              <option value="Prepared">Prepared</option>
+              <option value="Rice Dishes">Rice Dishes</option>
+              <option value="Bread">Bread</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Dal &amp; Curry">Dal &amp; Curry</option>
+              <option value="Vegetable Curries">Vegetable Curries</option>
+              <option value="Non-Vegetarian">Non-Vegetarian</option>
+              <option value="Seafood">Seafood</option>
+              <option value="Regional">Regional</option>
+              <option value="Desserts">Desserts</option>
+            </select>
+          </div>
+          <div>
+            <label for="cuisineSelect">Cuisine</label>
+            <select id="cuisineSelect">
+              <option value="all">All cuisines</option>
+              <option value="Global">Global</option>
+              <option value="Indian">Indian</option>
+              <option value="American">American</option>
+              <option value="Italian">Italian</option>
+              <option value="Mexican">Mexican</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Thai">Thai</option>
+              <option value="French">French</option>
+              <option value="Middle Eastern">Middle Eastern</option>
+              <option value="Spanish">Spanish</option>
+            </select>
+          </div>
+          <div>
+            <label for="sortSelect">Sort by</label>
+            <select id="sortSelect">
+              <option value="name">Name</option>
+              <option value="calories">Lowest calories</option>
+              <option value="protein">Highest protein</option>
+              <option value="fat">Lowest fat</option>
+            </select>
+          </div>
+          <div class="summary-card">
+            <p>Foods found</p>
+            <strong id="resultsCount">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="foodList" class="food-grid" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>Built as a static nutrition search site with sample food data and ingredient details.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
